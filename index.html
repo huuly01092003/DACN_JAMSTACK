@@ -3,12 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Jamstack Site</title>
+  <title>Jamstack Layout</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Welcome to My Jamstack Site</h1>
-  <p>This is a simple site created using Jamstack.</p>
+  <header>
+    <h1>Welcome to My Jamstack Site</h1>
+  </header>
+
+  <div class="container">
+    <div class="left">
+      <img src="/img/buaancuatrietgia.webp" alt="Sample Image">
+    </div>
+    <div class="right">
+      <button id="run-button">Run</button>
+      <textarea id="content-area" placeholder="Enter some content..."></textarea>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
