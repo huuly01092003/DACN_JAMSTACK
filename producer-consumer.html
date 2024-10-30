@@ -44,6 +44,7 @@
       </div>
     </div>
   </nav>
+
   <!-- Main Content -->
   <div class="container my-5">
     <div class="row">
@@ -56,22 +57,22 @@
       <div class="col-md-6">
         <!-- Row 1: Button and Combobox -->
         <div class="row mb-3 d-flex align-items-center">
-          <div class="col-6 d-flex justify-content-start">
+          <div class="col-4 d-flex justify-content-start">
             <button id="runButton" class="btn btn-primary btn-lg">
               <i class="fas fa-play"></i> Run
             </button>
           </div>
-          <div class="col-6 d-flex justify-content-end">
+          <div class="col-4 d-flex justify-content-end">
             <select id="optionSelect" class="form-select form-select-lg">
-              <option value="Semaphore">Semaphore</option>
-              <option value="Monitor">Monitor</option>
+              <option value="Producer-Consumer - Semaphore">Semaphore</option>
+              <option value="Producer-Consumer - Monitor">Monitor</option>
             </select>
           </div>
         </div>
 
         <!-- Input Box for Custom Problem -->
         <div class="mb-3">
-          <label for="numPhilosophers" class="form-label">Producer-Consumer:</label>
+          <label for="numPhilosophers" class="form-label">Nhập số giới hạn</label>
           <input type="number" id="numPhilosophers" class="form-control" value="5" min="1">
         </div>
 
@@ -81,11 +82,14 @@
         </div>
       </div>
     </div>
+    <div class="row " style="margin-top: 10px;width: 1270px;margin-left: 10px;">
+      <p>Bài toán "Producer-Consumer" mô tả một bộ đệm chia sẻ giữa các nhà sản xuất (producers) và người tiêu dùng (consumers). Các nhà sản xuất tạo sản phẩm và đưa vào bộ đệm, trong khi các người tiêu dùng lấy sản phẩm từ bộ đệm để sử dụng. Bài toán này giúp minh hoạ các vấn đề đồng bộ hoá tiến trình như tranh chấp tài nguyên và tránh tình trạng đầy bộ đệm hoặc trống bộ đệm.</p>    </div>
   </div>
 
   <!-- Bootstrap JS and dependencies -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Custom JS -->
+  <script src="script.js"></script>
 </body>
 
 </html>
